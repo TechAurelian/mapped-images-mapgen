@@ -62,7 +62,7 @@ async function writeImageMap(map, file) {
   // await fs.writeFile(file, content);
 
   // Write the map as a YAML file
-  const yamlDoc = yaml.safeDump(map);
+  const yamlDoc = yaml.dump(map);
   fs.writeFile(file, yamlDoc);
 }
 
